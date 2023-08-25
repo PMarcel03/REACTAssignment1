@@ -1,0 +1,55 @@
+/*Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Phudu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap'); 
+/*Changes body background*/
+/*!important tag is used to ensure that the CSS rule is not overwritten*/
+body
+{
+    margin: 0;
+    padding: 0;
+    background-color: #1d1d1d !important;
+    color: #cccccc !important;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+/*Sets image size and rounds image borders*/
+.scp-image
+{
+    max-width: 30%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+/*Gives buttons spacing*/
+.scp-buttons
+{
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5rem;
+
+}
+/*Changes the colour of the button and button transition*/
+button
+{
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: white;
+    color: black;
+    border: 4px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    font-family: 'Roboto Condensed', sans-serif !important;
+}
+/*Heading font*/
+h1,h2
+{
+    font-family: 'Phudu', cursive;
+    padding: 1rem;
+}
+h3
+{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
