@@ -31,10 +31,17 @@ return (
          <div>
             <nav className="navbar navbar-dark bg-dark">
                 <div className="container">
-                    <a className="navbar-brand" href="#">
-                        <img src="https://i.imgur.com/QJoRQPn.png" alt="Logo" width="30" height="30" className="d-inline-block align-text-top" />
+                    <button className="btn btn-outline-light">
+                    <a img 
+                            src="https://i.imgur.com/QJoRQPn.png"
+                            alt="Logo"
+                             width="30"
+                            height="30" 
+                            className="d-inline-block align-text-top" 
+                            />
                         SCP Viewer
-                    </a>
+                    </button>
+                
                     <div className='scp-buttons'>
                         <button className="btn btn-outline-light" onClick={handlePreviousClick}>Previous Entry</button>
                         <button className="btn btn-outline-light" onClick={handleNextClick}>Next Entry</button>
