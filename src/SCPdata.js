@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react'; //Loads usestate functionality from REACT
 import SCPData from './Data.json' //Loads Data JSON file containing SCP entries
-import Style from './Style.css'; //Loads Style Sheet
+
 
 function SCPInfo(){
     //Creates a use state
@@ -28,26 +28,28 @@ const currentSCP = scpInfo[currentIndex];
 return (
     //Loads SCP information and Navigation menu
     <div>
-         <div>
+        <div>
             <nav className="navbar navbar-dark bg-dark">
-                <div className="container">
-                    <button className="btn btn-outline-light">
-                    <a img 
-                            src="https://i.imgur.com/QJoRQPn.png"
-                            alt="Logo"
-                             width="30"
-                            height="30" 
-                            className="d-inline-block align-text-top" 
-                            />
-                        SCP Viewer
-                    </button>
-                
-                    <div className='scp-buttons'>
-                        <button className="btn btn-outline-light" onClick={handlePreviousClick}>Previous Entry</button>
-                        <button className="btn btn-outline-light" onClick={handleNextClick}>Next Entry</button>
-                    </div>
-                </div>
-            </nav>
+            <div className="container">
+            <button className="btn btn-outline-light">
+                <img 
+                    src="https://i.imgur.com/QJoRQPn.png"
+                     alt="SCP Viewer Logo"
+                    width="30"
+                     height="30" 
+                    className="d-inline-block align-text-top" 
+                     />
+                    SCP Viewer
+            </button>
+    
+            <div className='scp-buttons'>
+                <button className="btn btn-outline-light" onClick={handlePreviousClick}>Previous Entry</button>
+                <button className="btn btn-outline-light" onClick={handleNextClick}>Next Entry</button>
+            </div>
+     </div>
+    </nav>
+
+          
         </div>
         
         {currentSCP && (
