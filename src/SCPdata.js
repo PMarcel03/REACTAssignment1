@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react'; //Loads usestate functionality from REACT
 import SCPData from './Data.json' //Loads Data JSON file containing SCP entries
-import Style from './Style.css'//Loads StyleSheet
+
 
 function SCPInfo(){
     //Creates a use state
